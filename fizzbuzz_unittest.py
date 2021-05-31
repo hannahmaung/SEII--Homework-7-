@@ -12,7 +12,10 @@ class testCase(unittest.TestCase):
     def test2(self):
         for input in [15]:
             assert test(input) == "FizzBuzz"
-
+    # Test 3 will pass, 9 is a multiple of 3 which prints out "Fizz"
+    def test3(self):
+        for input in [9]:
+            assert test(input) == "Fizz"
 if __name__ == "__main__":
         unittest.main()
 
