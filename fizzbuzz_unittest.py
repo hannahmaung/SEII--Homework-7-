@@ -1,16 +1,14 @@
 
 #Unit test for fizzbuzz program 
 import unittest 
-import fizzbuzz
-
+from fizzbuzz import test # type: ignore
 
 class testCase(unittest.TestCase):
-    #def setup(self):
-        #self.fizzbuzz = fizzbuzz()
     #Test 1 will pass 
     def test1(self):
-        self.assertEqual(fizzbuzz, 'Fizz')
+        for input in [5]:
+            assert test(input) == 'Buzz'
 
 if __name__ == "__main__":
-    unittest.main()
+        unittest.main()
 
