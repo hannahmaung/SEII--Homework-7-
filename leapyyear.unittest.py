@@ -9,7 +9,11 @@ class testCase(unittest.TestCase):
     def test1(self):
         for input in [2012]:
             assert test(input) == True
-            
+    # Test 2 will pass, 2000 is a leap year
+    def test2(self):
+        for input in [2000]:
+            assert test(input) == True
+
 if __name__ == "__main__":
         unittest.main()
 
