@@ -2,10 +2,14 @@
 import unittest 
 from leapyear import test # type: ignore
 
-class testCase(unittest.TestCase):
-    def test1(self):
-        self.assertEqual(leapyear.test())
 
+class testCase(unittest.TestCase):
+
+    #Test 1 will pass, 2012 is a leap year
+    def test1(self):
+        for input in [2012]:
+            assert test(input) == True
+            
 if __name__ == "__main__":
         unittest.main()
 
